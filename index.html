@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light" id="html-dark" class="html-dark">
+<html lang="en" data-bs-theme="dark" id="html-dark" class="html-dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,41 +21,87 @@
             width: 40px;
         }
     }
-    @media only screen and (max-width: 580px) {
-        
-        .logo img{
-            width: 40px;
-        }
-    }
+
 </style>
 <body class="d-flex">
-   
     
-    <nav class="offcanvas-md  offcanvas-start col-2 border-end col-md-1 col-lg-2 border-3 p-2  d-flex flex-column align-items-center align-items-md-stretch" style="height: 100vh;"  tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="d-md-flex logo justify-content-center p-lg-3">
-                <img class="" src="./logo.png" alt="logo">
-                <span class="text-white fs-3 fw-bold ms-1 align-self-end d-none d-lg-block">Media</span>
+    
+    <nav class="offcanvas-sm offcanvas-start col-2 border-end border-3  d-flex flex-column " style="min-height: 100vh;"  tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="d-flex logo justify-content-between justify-content-sm-center p-4 p-sm-3">
+            <img class="" src="./logo.png" alt="logo">
+            <span class="d-none d-md-block fs-2 fw-bold ">Media</span>
+            <button type="button" class="btn-close d-block d-sm-none" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-label="Close"></button>
+           
         </div>
-        <div class="d-flex flex-column align-items-center"  style="margin-top: 8rem;">
-            <a href="#" class="nav-link  active d-flex align-items-center justify-content-md-center justify-content-lg-start col-10    col-lg-12 bg-primary p-2 fs-6 rounded"><i class="fa-solid fa-user pe-lg-2"></i> <span class="d-none d-lg-block">Profile</span> </a>
-            <a href="#" class="nav-link  d-flex align-items-center col-10 justify-content-md-center justify-content-lg-start   col-lg-12  p-2 fs-6"><i class="fa-solid fa-users  pe-lg-2"></i><span class="d-none d-lg-block ">Admin List </span> </a>
-            <a href="#" class="nav-link  d-flex align-items-center col-10 justify-content-md-center justify-content-lg-start   col-lg-12  p-2 fs-6"><i class="fa-solid fa-table-list  pe-lg-2"></i> <span class="d-none d-lg-block">Category</span> </a>
-            <a href="#" class="nav-link  d-flex align-items-center col-10 justify-content-md-center justify-content-lg-start   col-lg-12  p-2 fs-6"><i class="fa-regular fa-pen-to-square  pe-lg-2"></i> <span class="d-none d-lg-block">Post</span> </a>
-            <a href="#" class="nav-link  d-flex align-items-center col-10 justify-content-md-center justify-content-lg-start   col-lg-12  p-2 fs-6"><i class="fa-solid fa-ranking-star  pe-lg-2"></i> <span class="d-none d-lg-block">Trend Post</span> </a>
-            <a href="#" class="nav-link text-danger d-flex align-items-center col-9  col-lg-12  p-2 fs-6"><i class="fa-solid fa-arrow-right-from-bracket  pe-lg-2"></i><span class="d-none d-lg-block">Log Out </span> </a>
-
-                
+        <div class="mb-5"  style="margin-top: 6rem;">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item  bg-primary mb-1" aria-label="Profile">
+                    <a href="#" aria-current="Page" class="nav-link d-flex ps-3 active text-white  flex-md-row align-items-start align-items-sm-center justify-content-sm-center justify-content-md-start  p-2 fs-6 ">
+                        <i class="fa-solid fa-user pe-2"></i> <span class="d-sm-none d-md-block ">Profile</span> 
+                    </a>
+                </li>
+                <li class="nav-item  mb-1 "  data-bs-dismiss="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-label="Close">
+                    <a href="#" aria-current="Page" class="nav-link d-flex ps-3  flex-md-row align-items-start align-items-sm-center justify-content-sm-center justify-content-md-start  p-2 fs-6 ">
+                        <i class="fa-solid fa-users  pe-2"></i><span class="d-sm-none d-md-block">Admin List </span>
+                    </a>
+                </li>
+                <li class="nav-item  mb-1"  data-bs-dismiss="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-label="Close">
+                    <a href="#" aria-current="Page" class="nav-link d-flex ps-3  flex-md-row align-items-start align-items-sm-center justify-content-sm-center justify-content-md-start  p-2 fs-6 ">
+                        <i class="fa-solid fa-table-list  pe-2"></i> <span class="d-sm-none d-md-block">Category</span> 
+                    </a>
+                </li>
+                <li class="nav-item  mb-1"  data-bs-dismiss="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-label="Close">
+                    <a href="#" aria-current="Page" class="nav-link d-flex ps-3  flex-md-row align-items-start align-items-sm-center justify-content-sm-center justify-content-md-start  p-2 fs-6 ">
+                        <i class="fa-regular fa-pen-to-square  pe-2"></i> <span class="d-sm-none d-md-block">Post</span>
+                    </a>
+                </li>
+                <li class="nav-item  mb-1"  data-bs-dismiss="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-label="Close">
+                    <a href="#" aria-current="Page" class="nav-link d-flex ps-3  flex-md-row align-items-start align-items-sm-center justify-content-sm-center justify-content-md-start  p-2 fs-6 ">
+                        <i class="fa-solid fa-ranking-star  pe-2"></i> <span class="d-sm-none d-md-block">Trending Post </span> 
+                    </a>
+                </li>
+                <li class="nav-item  mb-1"  data-bs-dismiss="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-label="Close">
+                    <a href="#" aria-current="Page" class="nav-link d-flex ps-3 text-danger  flex-md-row align-items-start align-items-sm-center justify-content-sm-center justify-content-md-start  p-2 fs-6 ">
+                        <i class="fa-solid fa-arrow-right-from-bracket  pe-2"></i><span class="d-sm-none d-md-block">Log Out </span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <div class="col-10 bg-danger">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-            <span class="navbar-toggler-icon"></span>hello
-        </button>
-    </div>
-  
+    <section class="d-flex col-12 col-sm-10 flex-column">
+     
+            <div class="border border-bottom border-1 navbar sec-nav sticky-top bg-dark z-3">
+                <div class="container-fluid p-2 d-flex justify-content-between">
+                    <div class="header fs-3">
+                        <span class="d-none d-sm-block text-primary">Profile</span>
+                        <button class="navbar-toggler d-block d-sm-none mt-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                            <i class="fa-solid fa-bars fs-1 "></i>
+                        </button>
+                    </div>
+                    <div class="d-flex d-sm-none logo justify-content-between justify-content-sm-center ">
+                        <span class=" fs-2 fw-bold "> <span class="text-primary">V</span> Media</span>  
+                    </div>
+                    <div class="mode">        
+                        <div class="theme">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-10 ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>Hello every one
+                </button>
+            </div> -->
+            <div class="col-12   sticky-top overflow-y-scroll z-0" style="height: 88vh;">
+                <div class="" style="height: 100vh;">
+                    hellodlakfjadsf
+                </div>
+            </div>
+        
+        
+    </section>
+    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script>
-    
-</script>
+<script src="script.js"></script>
 </html>
